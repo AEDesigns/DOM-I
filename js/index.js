@@ -40,3 +40,48 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+const title = document.querySelector('title')
+title.textContent = 'Great Idea! DOM'
+
+const href = document.querySelectorAll('a')
+href[0].innerText = siteContent['nav']['nav-item-1']
+href[1].innerText = siteContent['nav']['nav-item-2']
+href[2].innerText = siteContent['nav']['nav-item-3']
+href[3].innerText = siteContent['nav']['nav-item-4']
+href[4].innerText = siteContent['nav']['nav-item-5']
+href[5].innerText = siteContent['nav']['nav-item-6']
+
+
+const headerOne = document.querySelector('h1')
+headerOne.innerHTML = 'DOM<br> Is<br> Awesome'
+
+const button = document.querySelector('button')
+button.textContent = siteContent["cta"]["button"]
+
+const cta = document.querySelector('#cta-img')
+cta.setAttribute('src', siteContent["cta"]["img-src"])
+
+const headerFour = document.querySelectorAll('h4')
+headerFour[0].innerText = siteContent['main-content']['features-h4']
+headerFour[1].innerText = siteContent['main-content']['about-h4']
+headerFour[2].innerText = siteContent['main-content']['services-h4']
+headerFour[3].innerText = siteContent['main-content']['product-h4']
+headerFour[4].innerText = siteContent['main-content']['vision-h4']
+
+const paragraphs = document.querySelectorAll('p')
+paragraphs[0].innerText = siteContent['main-content']['features-content']
+paragraphs[1].innerText = siteContent['main-content']['about-content']
+paragraphs[2].innerText = siteContent['main-content']['services-content']
+paragraphs[3].innerText = siteContent['main-content']['product-content']
+paragraphs[4].innerText = siteContent['main-content']['vision-content']
+
+const middleImg = document.querySelector('#middle-img')
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
+headerFour[5].innerText = siteContent['contact']['contact-h4']
+paragraphs[5].innerText = siteContent['contact']['address']
+paragraphs[6].innerText = siteContent['contact']['phone']
+paragraphs[7].innerText = siteContent['contact']['email']
+
+paragraphs[8].innerText = siteContent['footer']['copyright']
